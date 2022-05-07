@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    
 }
 
 body {
@@ -66,6 +66,7 @@ body {
 .texto-navbar {
     color: #100681;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .item-navbar {
@@ -79,7 +80,7 @@ body {
     color: #FFFFFF;
     text-align: center;
     margin: 40px 0px;
-    ;
+    font-weight: bold;
 
 }
 
@@ -113,4 +114,96 @@ body {
     line-height: 41px;
     color: #FFFFFF;
     text-align: center;
+    font-weight: bold;
 }
+
+.promocoes-figure{
+    background-color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
+
+.promocoes-img{
+    width: 100%;
+}
+
+/*altera o tamanho padão de cada item do carrosel*/
+.carousel__slide{
+    /*define que a largura máxima de cada item do carrosel vai ser de 40% p padrão é 60px */
+    max-width: var(--carrosel-slide-width,40%);
+}
+
+.banner2{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.banner2-img{
+    width: 100%;
+}
+
+.rodape{
+    background-color:black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: #fff;
+}
+
+.rodape-item{
+    padding: 20px;
+}
+
+.rodape-titulo{
+    /*para deixar todo o texto em letra maiuscula*/
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.rodape-texto{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 12px;
+}
+/*final Desktop*/
+
+/*inicio da versão mobile*/
+/*media query*/
+@media only screen and (max-width: 768px){
+    #container{
+        width: 100%;
+    }
+
+    .header{
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .pesquisar{
+        width: 100%;
+    }
+
+    .item{
+        padding: 5px;
+    }
+
+    .navbar{
+        grid-template-columns: 1fr;
+    }
+
+    .item-navbar{
+        padding: 10px;
+    }
+
+    .categorias{
+        grid-template-columns: 1fr;
+    }
+
+    .rodape{
+        grid-template-columns: 1fr;
+    }
+
+}
+/*final versão mobile*/
+
