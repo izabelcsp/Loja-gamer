@@ -130,7 +130,7 @@ body {
 /*altera o tamanho padão de cada item do carrosel*/
 .carousel__slide{
     /*define que a largura máxima de cada item do carrosel vai ser de 40% p padrão é 60px */
-    max-width: var(--carrosel-slide-width,40%);
+    max-width: var(--carousel-slide-width,40%);
 }
 
 .banner2{
@@ -164,6 +164,18 @@ body {
     color: #FFF;
     font-size: 12px;
 }
+
+/*.carousel__dots{ color: #FFF;} muda a cor dos marcadores (bolinha)*/
+    
+.carousel__dots{
+    color: #FFF;
+}
+
+.carousel__button{
+    color: #FFF;
+    background-color: rgba(0,0,0, 0.363);
+}
+
 /*final Desktop*/
 
 /*inicio da versão mobile*/
@@ -204,6 +216,28 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .carousel__slide{
+        max-width: var(--carousel-slide-width, 80%);
+        width: 70%;
+    }
+
+    .promocoes-figure{
+        margin: 0;
+        height: 300px;
+    }
+
+    .carrinho-texto{
+        display: none;
+    }
+
+    .oculta-navbar{
+        display: none;
+    }
+
 }
+
+
+
+
 /*final versão mobile*/
 
